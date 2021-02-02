@@ -1,0 +1,16 @@
+D:\Code\Mastermind\Mastermind\bin\Debug\net5.0\Mastermind.exe
+D:\Code\Mastermind\Mastermind\bin\Debug\net5.0\Mastermind.deps.json
+D:\Code\Mastermind\Mastermind\bin\Debug\net5.0\Mastermind.runtimeconfig.json
+D:\Code\Mastermind\Mastermind\bin\Debug\net5.0\Mastermind.runtimeconfig.dev.json
+D:\Code\Mastermind\Mastermind\bin\Debug\net5.0\Mastermind.dll
+D:\Code\Mastermind\Mastermind\bin\Debug\net5.0\ref\Mastermind.dll
+D:\Code\Mastermind\Mastermind\bin\Debug\net5.0\Mastermind.pdb
+D:\Code\Mastermind\Mastermind\obj\Debug\net5.0\Mastermind.csprojAssemblyReference.cache
+D:\Code\Mastermind\Mastermind\obj\Debug\net5.0\Mastermind.GeneratedMSBuildEditorConfig.editorconfig
+D:\Code\Mastermind\Mastermind\obj\Debug\net5.0\Mastermind.AssemblyInfoInputs.cache
+D:\Code\Mastermind\Mastermind\obj\Debug\net5.0\Mastermind.AssemblyInfo.cs
+D:\Code\Mastermind\Mastermind\obj\Debug\net5.0\Mastermind.csproj.CoreCompileInputs.cache
+D:\Code\Mastermind\Mastermind\obj\Debug\net5.0\Mastermind.dll
+D:\Code\Mastermind\Mastermind\obj\Debug\net5.0\ref\Mastermind.dll
+D:\Code\Mastermind\Mastermind\obj\Debug\net5.0\Mastermind.pdb
+D:\Code\Mastermind\Mastermind\obj\Debug\net5.0\Mastermind.genruntimeconfig.cache
