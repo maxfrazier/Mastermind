@@ -14,10 +14,44 @@ namespace Mastermind
         static void Main(string[] args)
         {
             if(attempts == 0) {
-                displayBanner();                
-                beginNewGame();
+                playGame();
             }            
-            while(attempts < 10 && winFlag == false) {                
+            while(attempts == 10 || winFlag == true) {
+                if(attempts == 10) {
+                    Console.WriteLine("You lose! Play again? (Y/N)");
+                } else {
+                    Console.WriteLine("You won! Play again? (Y/N)");
+                }
+                
+                var userResponse = Console.ReadLine();
+                if (userResponse == "Y" || userResponse == "y") { 
+                    playGame();                 
+                }
+                else if (userResponse == "N" || userResponse == "n")
+                {
+                    break;
+                }
+                else{
+                    Console.WriteLine("Invalid Selection!");
+                }
+            }                        
+        }
+
+        public static void beginNewGame()
+        {
+            winFlag = false;
+            attempts = 0;            
+            answer.numbers[0] = new Random().Next(1,6);
+            answer.numbers[1] = new Random().Next(1,6);
+            answer.numbers[2] = new Random().Next(1,6);
+            answer.numbers[3] = new Random().Next(1,6);
+        }
+
+        public static void playGame()
+        {
+            displayBanner();
+            beginNewGame();
+                while(attempts < 10 && winFlag == false) {                
                 string guess = Console.ReadLine();
                 if(guess == "stop") {
                     break;
@@ -56,36 +90,7 @@ namespace Mastermind
                     Console.WriteLine("Please enter 4 digit numbers only.");
                 }
             }
-            while(attempts == 10 || winFlag == true) {
-                if(attempts == 10) {
-                    Console.WriteLine("You lose! Play again? (Y/N)");
-                } else {
-                    Console.WriteLine("You won! Play again? (Y/N)");
-                }
-                
-                var userResponse = Console.ReadLine();
-                if (userResponse == "Y" || userResponse == "y") {
-                    beginNewGame();                    
-                }
-                else if (userResponse == "N" || userResponse == "n")
-                {
-                    break;
-                }
-                else{
-                    Console.WriteLine("Invalid Selection!");
-                }
-            }                        
         }
-
-        public static void beginNewGame()
-        {
-            attempts = 0;            
-            answer.numbers[0] = new Random().Next(1,6);
-            answer.numbers[1] = new Random().Next(1,6);
-            answer.numbers[2] = new Random().Next(1,6);
-            answer.numbers[3] = new Random().Next(1,6);
-        }
-
         public static void displayBanner()
         {
                 Console.WriteLine("╔════════════════════════════════════════════╗");
